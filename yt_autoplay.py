@@ -25,6 +25,8 @@ def play_youtube(song_name):
         EC.element_to_be_clickable((By.ID, "video-title"))
     )
     video.click()
+    time.sleep(2)
+    driver.refresh()
 
 
     print(f"Now Playing {song_name} on YouTube via Edge")
